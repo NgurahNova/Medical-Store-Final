@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: #367cff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.header img {
+  width: 155px;
+  height: 50px;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+.navbar a:hover:before {
+  width: 100%;
+}
+
+.backgorund {
+  background-color: rgb(194, 191, 191);
+  position: relative;
+  top: 85px;
+  height: 600px;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+.backgorund h1 {
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 30px;
+  font-size: 25px;
+}
+
+.container-2 {
+  display: flex;
+  position: relative;
+  top: 50px;
+  height: auto;
+  padding: 50px;
+  width: 100%;
+}
+/* Navbar end */
+
+/* Search bar */
+
+.box {
+  margin: 0 auto;
+  height: 36px;
+  background-color: whitesmoke;
+  width: 65%;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
+
+/* search bar end */
+/* .store {
+  background-color: rgb(23, 21, 21);
+  display: flex;
+  position: relative;
+  top: 85px;
+  height: 50px;
+  padding: 50px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 20px 20px 0 0;
+} */
+
+/* card */
+
+.store {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.card-content p {
+  margin: 10px 0;
+}
+
+.card-content button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-content a {
+  text-decoration: none;
+}
+
+.card-content button:hover {
+  background-color: #0056b3;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1f2937;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0; /* Padding 2em pada bagian atas dan bawah */
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+/* footer end */
